@@ -8,7 +8,47 @@
     <link rel="stylesheet" href="./css/stylesheet.css" />
 </head>
 <body>
-    <h1>Survey page 1</h1>
+    <h1>Page 1</h1>
+
+    <form>
+        <fieldset>
+            <legend> Contact information</legend>
+            <div>
+            <label for ="fname"> First name:
+                <input id ="fname" type = "text" autofocus required>
+            </label>
+            </div>
+            <div>
+            <label for ="lname"> Last name:
+                <input id ="lname" type = "text" required>
+            </label>
+            </div>
+            <div>
+            <label for ="email"> Email:
+                <input id ="email" type = "email" required>
+            </label>
+        </div>
+
+        </fieldset>
+        <div>
+            <label for="female">
+                <input type="radio" id="female" name="gender" value="female"> Female 
+            </label>
+            
+            <label for="male">
+                <input type="radio" id="male" name="gender" value="male"> Male
+            </label>
+            
+            <label for="non-binary">
+            <input type="radio" id="non-binary" name="gender" value="non-binary">Non-binary
+            </label>
+
+            <label for="other">
+                <input type="radio" id="other" name="gender" value="other"> Other
+            </label>
+        </div>
+
+    </form>
     <button onclick="window.location.href='./survey-2.html';">
          Next page
         </button>
